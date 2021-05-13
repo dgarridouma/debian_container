@@ -10,8 +10,6 @@ services:
      - /var/run/docker.sock:/var/run/docker.sock # docker in docker
      - type: tmpfs
        target: /dev/shm # firefox requirement
-     - ./cosmos-examples:/home/alumno/src/cosmos-examples # Note: This container has an own cosmos-examples directory
-                                                          # that is "hidden" by this volume 
    networks:
       default:
 
